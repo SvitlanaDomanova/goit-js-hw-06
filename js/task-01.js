@@ -1,8 +1,13 @@
 const liEl = document.querySelectorAll('li.item');
 console.log(`Number of categories: ${liEl.length}`);
 
-const liElChild = liEl.childNodes;
-console.log(liElChild);
 
-let arrs = Array.from(liEl);
-console.log(arrs);
+
+ liEl.forEach(elem => {
+    let itemLiEl = elem.firstElementChild.textContent;
+    let ChildEl = elem.lastElementChild.textContent;
+    console.log(`Category: ${elem.firstElementChild.textContent}`);
+    console.log(ChildEl.length);
+ }
+
+ )
