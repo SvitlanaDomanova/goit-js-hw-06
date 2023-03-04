@@ -6,8 +6,17 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-const listEl = document.querySelector('.ingredients');
-const listItemEl = document.createElement('li');
-//listItemEl.classList.add(item);
-console.log(listItemEl);
-console.log(listEl);
+
+const ulEl = document.querySelector(".ingredients");
+
+
+ingredients.forEach(Element => {
+  const listNew = document.createElement("li");
+  listNew.classList.add("item");
+  listNew.textContent = Element;
+
+  console.log(listNew);
+  
+return listNew
+}
+);
