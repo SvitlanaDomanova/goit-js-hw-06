@@ -1,17 +1,18 @@
 
-const ElInput = document.querySelector('input');
-console.log(ElInput);
-const ElStyle = document.querySelector('style');
-console.log(ElStyle);
+const elInput = document.querySelector('input');
+console.log(elInput);
+const elStyle = document.querySelector('style');
+console.log(elStyle);
+let noneStyle = elInput.classList.remove('validation-input.valid');
+console.log(noneStyle);
 
+elInput.addEventListener('blur', (event) => {
+    let elTest = event.target.value;
+    console.log(elTest);
 
-ElInput.addEventListener('blur', (event) => {
-    let ElTest = event.target.value;
-    console.log(ElTest);
-
-    let ElLength = ElTest.length;
-    console.log(ElLength);
-    if (event.target.value.trim(ElTest).length === Number(ElInput.getAttribute('data-length'))){
+    let elLength = elTest.length;
+    console.log(elLength);
+    if (event.target.value.trim(elTest).length === Number(elInput.getAttribute('data-length'))){
         event.target.style.outline = ' 3px solid green';
     }
 else {

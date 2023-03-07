@@ -1,18 +1,18 @@
-const ElSpan = document.querySelector('span');
-console.log(ElSpan);
-const ElInput = document.querySelector('input');
-console.log(ElInput);
-const ElOutput = document.querySelector('.name-output');
-console.log(ElOutput);
-ElSpan.textContent = 'Anonymys';
+const elSpan = document.querySelector('span');
+console.log(elSpan);
+const elInput = document.querySelector('input');
+console.log(elInput);
+const elOutput = document.querySelector('.name-output');
+console.log(elOutput);
+elSpan.textContent = 'Anonymys';
 
-ElInput.addEventListener('input', (event) => {
+elInput.addEventListener('input', (event) => {
 
-    if (event.target.value === " " || event.target.value.trim(ElSpan.textContent).length === 0){
+    if (event.target.value === " " || event.target.value.trim(elSpan.textContent).length === 0){
         return "Anonymys";
     }
 else {
-    ElSpan.textContent = event.target.value;
-    return ElSpan.textContent;
+    elSpan.textContent = event.target.value;
+    return elSpan.textContent;
 }
 })

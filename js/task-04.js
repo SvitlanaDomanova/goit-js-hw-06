@@ -1,9 +1,9 @@
-const AllEl = document.querySelector('div');
+const allEl = document.querySelector('div');
 console.log(AllEl);
-const Decr = AllEl.firstElementChild;
+const Decr = allEl.firstElementChild;
 console.log(Decr);
-const Incr = AllEl.lastElementChild;
-console.log(Incr);
+const incr = allEl.lastElementChild;
+console.log(incr);
 let counterValue = 0;
 
 Decr.addEventListener('click', () => {
