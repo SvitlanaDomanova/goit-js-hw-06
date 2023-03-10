@@ -16,10 +16,8 @@ const images = [
 const el = document.querySelector(".gallery");
 
 const galleryRef = images
-.map(({ url, alt }) => `<li><img src="${url}" alt="${alt}"></li>`)
+.map(({ url, alt }) => `<li><img src="${url}" alt="${alt}"  width = "500"height = "300"display= 'flex'list-style-type= "none"/></li>`)
 .join("");
 
 el.insertAdjacentHTML("afterbegin", galleryRef);
-
-var elems = document.getElementsByTagName('img');
-for(var i=0; i<elems.length; i++) elems[i].style.width='400px';
+console.log(galleryRef);

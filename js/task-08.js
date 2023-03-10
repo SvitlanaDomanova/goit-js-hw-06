@@ -7,21 +7,10 @@ formEl.addEventListener("submit", handleSubmitLoginForm)
 
 function handleSubmitLoginForm (event) {
     event.preventDefault();
-
-    if (emailInputEL.value.length === 0) {
+    if (emailInputEL.value.length === 0 || passwordInputEL.value.length === 0) {
         alert('All fields must be filled');
-   
     return;
- 
     }
-
-    else if (passwordInputEL.value.length === 0) {
-        alert('All fields must be filled');
-   
-    return;
- 
-    }
-
     const emailInputName = formEl.elements.email.name;
     const passwordInputName = formEl.elements.password.name;
     const inputData = {

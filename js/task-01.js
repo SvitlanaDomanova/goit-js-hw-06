@@ -4,10 +4,6 @@ console.log(`Number of categories: ${liEl.length}`);
 
 
  liEl.forEach(elem => {
-    let itemLiEl = elem.firstElementChild.textContent;
-    let ChildEl = elem.lastElementChild.children;
     console.log(`Category: ${elem.firstElementChild.textContent}`);
-    console.log(ChildEl.length);
- }
-
- )
+    console.log(elem.lastElementChild.children.length);
+ })
